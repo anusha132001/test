@@ -1,7 +1,7 @@
 select 
 id as payment_id,
 orderid as order_id ,
-paymentmethod,
-status,
-amount
+paymentmethod as payment_method,
+amount/100 as amounts
 from raw.stripe.payment
+
